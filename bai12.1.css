@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;/* Giữ nguyên kích thước */
+}
+
+
+body {
+    text-align: center; /* Căn giữ */
+    background: #0056b3;
+    color: white;
+    padding: 20px;
+}
+
+header{
+    display: flex; /* Sắp xếp theo hàng ngang */
+    background-color: blue;
+    border-radius: 15px; /* Bo tròn góc */
+}
+
+.header h1 {
+    font-size: 36px; /* Cở chữ */
+    font-weight: bold; /* In đậm */
+}
+
+.header h2 {
+    font-size: 18px; /* Cở chữ */
+    margin-top: 10px; 
+    font-style: italic; /* In nghiên*/
+}
+
+/* Định dạng thanh điều hướng */
+.navbar {
+    background: #003f7f;
+    padding: 10px 0;
+    border-radius: 15px; /* Bo tròn góc */
+}
+
+.navbar ul {
+    list-style: none;/* Loại bỏ các dấu đầu dòng*/
+    text-align: center;
+}
+
+.navbar ul li {
+    display: inline;/*Hiển thị các mục danh sách trên cùng một dòng*/
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    text-decoration: none;/*Loại bỏ gạch chân dưới liên kết.*/
+    color: white;
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: 0.3s;
+}
+
+.navbar ul li a:hover {
+    background: #ffcc00;
+    color: black;
+    border-radius: 5px;
+}
+
+/* Nội dung chào mừng */
+div {
+    text-align: center;
+    margin: 30px auto;
+    max-width: 800px;
+}
+
+h3 {
+    font-size: 24px;
+    color: #0056b3;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-top: 10px;
+    
+}
+
+/* Định dạng phần chân trang */
+footer {
+    position: absolute; /*Định vị phần chân trang*/
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 14px;
+}
