@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale-1">
+	<title> Trường THPT Trần Văn Hoài</title>
+	<link rel="stylesheet" type="text/css" href="01.css">
+    <script>
+        function showSection(sectionId) {
+            let sections = document.querySelectorAll('.section');
+            sections.forEach(section => section.classList.remove('active'));
+            document.getElementById(sectionId).classList.add('active');
+        }
+    </script>
+</head>
+<body>
+	<header class="header">
+		<img src="C:\Users\TCom\Downloads\Iogotvh.png" height="150" width="150">
+		<div class="title">
+			<h1>THPT Trần Văn Hoài</h1>
+			<p>Học để biết, Học để làm, Học để tự khẳng định mình, học để cùng chung sống </p>
+		</div>
+	</header>
+	<div>
+		<nav class="navbar">
+			<ul>
+				<li><a href="#" onclick="showSection('gioithieu')">Giới thiệu</a></li>
+				<li><a href="#" onclick="showSection('chuongtrinhhoc')">Chương trình học</a></li>
+				<li><a href="#" onclick="showSection('tuyensinh')">Tuyển sinh</a></li>
+				<li><a href="#" onclick="showSection('hoatdong')">Hoạt động</a></li>
+				<li><a href="#" onclick="showSection('lienhe')">Liên hệ</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div id="gioithieu" class="section active">
+		<h2>Chào mừng quý phụ huynh và học sinh! </h2>
+		<p>Trường THPT Trần Văn Hoài cam kết mang đến một môi trường học tập đầy ý nghĩa giúp học sinh phát triển toàn điện</p>
+		<img src="tvh.jpg" height="100" width="100">
+	</div>
+	<div id="chuongtrinhhoc" class="section">
+		<h2>Chương trình học</h2>
+		<ul>
+			<li>Giảng dạy theo chương trình chuẩn của Bộ Giáo dục và Đào tạo.</li>
+			<li>Phát triển kỹ năng mềm, tư duy sáng tạo và hướng nghiệp.</li>
+			<li>Tổ chức các lớp học nâng cao cho học sinh giỏi.</li>
+		</ul>
+	</div>
+	<div id="tuyensinh" class="section">
+		<h2>Tuyển sinh</h2>
+		<p>Trường tổ chức tuyển sinh vào lớp 10 theo kế hoạch của Sở Giáo dục và Đào tạo tỉnh Tiền Giang.</p>
+	</div>
+	<div id="hoatdong" class="section">
+		<h2>Hoạt động ngoại khóa</h2>
+		<ul>
+			<li>Tham gia các cuộc thi học thuật, thể thao cấp tỉnh và quốc gia.</li>
+			<li>Tổ chức hội trại, giao lưu văn hóa nghệ thuật.</li>
+		</ul>
+	</div>
+	<footer id="lienhe" class="section contact">
+		<p>63 khu 1 Thị Trấn Chợ Gạo, Huyện Chợ Gạo, Tiên Giang</p> 
+		<p>Điện thoại: 0733835231</p>
+		<p>Email: c3tranvanhoai.tiengiang@moet.edu.vn</p>
+		<p>Giấy phép số 187/GP-BC do Cục Báo Chí Bộ Văn Hóa Thông Tân cấp ngày 14/05/2007</p>
+	</footer>
+</body>
+</html>
